@@ -118,7 +118,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* :root { --header: #18780f; --nav: #369459; --side: #71d086; --contents: #a4d654; --footer: #d0e657; } */
 
-:root { --header: #098502; --main: #097e01;--banner: #0fb902; --content: #10dd01;  --footer: #13fc02; --box:#042b02;} 
+/* :root { --header: #098502; --main: #097e01;--banner: #0fb902; --content: #10dd01;  --footer: #13fc02; --box:#042b02;}  */
+:root{--box:#c9c9c9;--banner:#393939;--contents:#000000;}
 
 html { overflow-y: scroll; overflow-x: hidden; font-size: 62.5%; /* (10/16)*100%=62.5% */
  line-height: 1.75; font-weight: 400; } 
