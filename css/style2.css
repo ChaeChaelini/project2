@@ -73,16 +73,18 @@ main {
 }
 
 .notice_text {
-    display: flex;
+    width: 1200px;
     height: 33px;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1 0 0;
     background: #FFF;
 }
 
 .content_text {
+    width: 248px;
+    height: 68px;
+    background: #FFF;
+}
+
+.content1>.h3 {
     width: 592px;
     height: 68px;
     background: #FFF;
@@ -134,9 +136,9 @@ main {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.image {
+.image_c2 {
     width: 100%;
-    height: 325px;
+    height: 172px;
     background-color: #ffffff;
     align-self: stretch;
 }
@@ -174,6 +176,13 @@ main {
     background: rgba(0, 0, 0, 0.15);
 }
 
+.image_c5 {
+    width: 100%;
+    height: 325px;
+    background-color: #ffffff;
+    align-self: stretch;
+}
+
 .content6 {
     display: flex;
     padding: 40px 120px;
@@ -195,6 +204,13 @@ main {
     background: rgba(0, 0, 0, 0.15);
 }
 
+.image_c7 {
+    width: 100%;
+    height: 325px;
+    background-color: #ffffff;
+    align-self: stretch;
+}
+
 .cardcontainer {
     display: flex;
     justify-content: space-between;
@@ -214,9 +230,23 @@ main {
     background: #FFF;
 }
 
-.card3 {
-    width: 294px;
-    height: 372px;
+.card3container {
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.card3_s {
+    width: 300px;
+    height: 300px;
+    background: #FFF;
+}
+
+.card3_big {
+    width: 390px;
+    height: 390px;
     background: #FFF;
 }
 
