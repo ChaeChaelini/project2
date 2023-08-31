@@ -19,11 +19,9 @@ header {
   height: 80px;
   align-items: center;
   margin: auto;
-  /* justify-content: space-between; */
   text-align: center;
 }
 
-/* common */
 .inner {
   width: 100%;
   max-width: 1400px;
@@ -664,27 +662,37 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  background: rgba(0, 0, 0, 0.55);
-}
 
-/* //footer */
-footer {
-  display: flex;
-  flex-direction: column;
 }
 
 .inner1 {
+  width: 100%;
+  height: 61px;
   display: flex;
-  padding: 10px 50px 10px 0px;
+  padding: 10px 50px;
   flex-direction: column;
   align-items: flex-end;
+  background-color: #67625D;
 }
 
-.icon-wrap {
+.inner2 {
+  width: 1085px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 10px;
+  flex-direction: row;
+  margin: auto;
+}
+
+.inner2 .b3_text {
+  color: #333;
+}
+
+.icon_wrap {
+  width: 1400px;
+  display: flex;
+  justify-content: end;
   gap: 14px;
+  margin: auto;
 }
 
 .loginbox {
@@ -706,16 +714,17 @@ footer {
 }
 
 .box_wrap {
+  width: 100%;
   display: flex;
-  
-}
-
-.textbox {
-  display: flex;
-  
+  gap: 130px;
+  margin: auto;
 }
 
 .box3 {
   display: flex;
-  
+  gap: 49px;
+}
+
+.b3_text {
+  font-size: 13px;
 }
