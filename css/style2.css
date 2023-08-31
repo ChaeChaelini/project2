@@ -2,7 +2,10 @@
   width: 100%;
   margin: auto;
 }
-.df{display: flex;}
+
+.df {
+  display: flex;
+}
 
 header {
   width: 100%;
@@ -16,21 +19,30 @@ header {
 
 .header_wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   height: 80px;
   align-items: center;
   margin: auto;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent)
+}
+
+.header_wrap>ul {
+  width: 1000px;
+  display: flex;
+}
+
+.h_icon ul {
+  display: flex;
+  gap: 20px;
 }
 
 .inner {
   width: 100%;
-  max-width: 1200px;  
+  max-width: 1200px;
   justify-content: center;
   text-decoration: none;
-  margin: auto;
+  
 }
 
 .w100 {
@@ -42,6 +54,7 @@ header {
 
 .depth1 {
   height: 100%;
+
 }
 
 .depth1>a {
@@ -52,11 +65,11 @@ header {
   font-size: 18px;
 }
 
-.depth1:nth-child(1) a {
+.logo {
   height: 36px;
   background-image: url(../images/logo.png);
   background-repeat: no-repeat;
-  background-color: #999999;
+
 }
 
 .depth1>.w100 {
@@ -81,9 +94,11 @@ header {
   color: #6c801a;
 }
 
-.depth1:hover .w100 {
+.depth1:hover .w100 {width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: #a14b4b;
+  margin-top: 18px;
+  
 }
 
 .depth2>ul {
@@ -96,18 +111,24 @@ header {
 }
 
 /* 투뎁스 100%로 드롭다운 */
-nav {
+/* nav {
   position: relative;
 }
 
-nav>.header_wrap>.depth1>.w100 {
+/* nav>.header_wrap>.depth1>.w100 {
   position: absolute;
   left: 0;
-}
+} */ */
 
 .h_icon {
   display: flex;
   justify-content: space-between;
+}
+
+.h_text {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
 }
 
 .logo {
@@ -141,7 +162,7 @@ nav>.header_wrap>.depth1>.w100 {
 .login>a {
   width: 131px;
   height: 40px;
-  color: #000000;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -150,10 +171,11 @@ nav>.header_wrap>.depth1>.w100 {
   height: 40px;
   color: #ffffff;
   padding: 10px;
-  padding: 10px;
+  text-align: center;
 }
 
 /* //header */
+
 main {
   display: flex;
   flex-direction: column;
@@ -675,11 +697,20 @@ footer {
 }
 
 .inner2 {
-  width: 1085px;
+  width: 100%;
+  max-width: 1400px;
+  height: 186px;
   display: flex;
-  padding: 10px;
-  flex-direction: row;
+  background-color: #fafafa;
+  gap: 100px;
+}
+
+.box_wrap {
+  max-width: 1400px;
   margin: auto;
+  display: flex;
+  gap: 90px;
+
 }
 
 .inner2 .b3_text {
@@ -712,12 +743,6 @@ footer {
   height: 41px;
 }
 
-.box_wrap {
-  width: 100%;
-  display: flex;
-  gap: 130px;
-  margin: auto;
-}
 
 .box3 {
   display: flex;
@@ -726,4 +751,12 @@ footer {
 
 .b3_text {
   font-size: 13px;
+}
+
+.inner3 {
+  width: 100%;
+  max-width: 1400px;
+  height: 186px;
+  background-color: yellowgreen;
+  margin-bottom: 30px;
 }
