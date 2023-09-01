@@ -734,7 +734,6 @@ footer {
   max-width: 1400px;
   height: 186px;
   display: flex;
-  background-color: #fafafa;
   gap: 200px;
   margin: auto;
 }
@@ -754,6 +753,10 @@ footer {
 .sns_img {
   width: 41px;
   height: 41px;
+}
+
+.box1 {
+  gap: 10px;
 }
 
 .box3 {
