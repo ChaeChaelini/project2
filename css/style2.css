@@ -87,40 +87,40 @@ header:hover .logo {
   left: 0;
 }
 
-.header_wrap:hover .depth1 a {
-  color: #666;
+.depth1 a:hover {
+  color: #6c801a;
 }
 
 .header_wrap:hover .iconbox {
   color: #666;
 }
 
-.header_wrap>.depth1>a:hover {
-  color: #6c801a;
-}
-
 .depth2 ul {
   text-align: left;
   padding: 0;
   left: 0;
+  background: #3f323c;
 }
 
-.depth2 li {
-  text-align: left;
-  left: 0;
-}
-
-.depth1 .depth2 {
-  padding: 45px;
+.depth2 {
+  padding: 0;
   font-size: 18px;
   color: #555;
-  left: 0;
+  background: #fe44d3;
 }
 
 .depth1 ul li {
   padding: 6px;
   font-size: 14px;
   left: 0;
+  background: #6c801a;
+}
+
+.depth1 ul {
+  padding: 6px;
+  font-size: 14px;
+  left: 0;
+  background: #d3ab27;
 }
 
 .h_icon {
@@ -137,22 +137,6 @@ header:hover .logo {
 .logo {
   width: 160px;
   height: 40px;
-}
-
-.menubox {
-  width: 480px;
-  height: 40px;
-  color: #555;
-  color: #555;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu>a {
-  font-size: 18px;
-  padding: 10px;
-  color: #ffffff;
 }
 
 .login>a {
