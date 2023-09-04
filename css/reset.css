@@ -1,4 +1,5 @@
-@charset "UTF-8";/* http://meyerweb.com/eric/tools/css/reset/ 
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
  v2.0 | 20110126
  License: none (public domain)
 */
@@ -83,7 +84,14 @@ summary,
 time,
 mark,
 audio,
-video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -96,32 +104,60 @@ header,
 hgroup,
 menu,
 nav,
-section { display: block; } 
+section {
+    display: block;
+}
 
-body { line-height: 1; font-family: 'Pretendard', sans-serif; color: var(--text1); font-size: 1.6rem; } 
+body {
+    line-height: 1;
+    font-family: 'Pretendard', sans-serif;
+    color: var(--text1);
+    font-size: 1.6rem;
+}
 
 ol,
-ul { list-style: none; } 
+ul {
+    list-style: none;
+}
 
 blockquote,
-q { quotes: none; } 
+q {
+    quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after { content: ''; content: none; } 
+q:after {
+    content: '';
+    content: none;
+}
 
-table { border-collapse: collapse; border-spacing: 0; } 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /* custom */
-* { box-sizing: border-box; } 
+* {
+    box-sizing: border-box;
+}
 
-/* :root { --header: #18780f; --nav: #369459; --side: #71d086; --contents: #a4d654; --footer: #d0e657; } */
+:root {
+    --box: #c9c9c9;
+    --banner: #393939;
+    --contents: #000000;
+}
 
-/* :root { --header: #098502; --main: #097e01;--banner: #0fb902; --content: #10dd01;  --footer: #13fc02; --box:#042b02;}  */
-:root{--box:#c9c9c9;--banner:#393939;--contents:#000000;}
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 62.5%;
+    /* (10/16)*100%=62.5% */
+    line-height: 1.75;
+    font-weight: 400;
+}
 
-html { overflow-y: scroll; overflow-x: hidden; font-size: 62.5%; /* (10/16)*100%=62.5% */
- line-height: 1.75; font-weight: 400; } 
-
-a { text-decoration: none; } 
+a {
+    text-decoration: none;
+}
