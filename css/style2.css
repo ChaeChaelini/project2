@@ -129,34 +129,37 @@ header:hover .logo {
 
 .h_text {
   display: flex;
+  justify-content: space-around;
+  gap: 30px;
   font-size: 15px;
   align-items: center;
 }
 
-.login>a {
+.h_text a {
   width: 131px;
   height: 40px;
   color: #ffffff;
   padding: 10px;
 }
 
+/* .login>a {
+  width: 131px;
+  height: 40px;
+  color: #ffffff;
+  padding: 10px;
+} */
+
 header:hover a {
   color: #555;
 }
 
-.h_text {
-  display: flex;
-  font-size: 15px;
-  align-items: center;
-}
-
-.iconbox a {
+/* .iconbox a {
   width: 141px;
   height: 40px;
   color: #ffffff;
   padding: 10px;
-  background: yellow;
-}
+  background: rgb(255, 183, 0);
+} */
 
 /*=================== //header================= */
 
@@ -443,6 +446,16 @@ h3 {
   padding: 20px 0;
 }
 
+.cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 card2"
+    "card1 card3"
+  ;
+}
+
 .card1 {
   width: 590px;
   height: 570px;
@@ -458,8 +471,13 @@ h3 {
 
 /*=================== content 4 ======================= */
 .content4 {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+    "item1 item2"
+  ;
   gap: 30px;
   align-self: stretch;
   background: #fff;
@@ -472,6 +490,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  grid-area: item1;
 }
 
 .card_c4_1 h3 {
@@ -495,6 +514,7 @@ h3 {
   background: url(../images/c4-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  grid-area: item2;
 }
 
 .card_c4_2 h3 {
@@ -708,7 +728,7 @@ footer {
   padding: 6px 0px;
   justify-content: center;
   align-items: center;
-  background: #3f323c;
+  background: #35322f;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -849,21 +869,22 @@ footer {
 }
 
 /* ================미디어쿼리================ */
-@media all and (min-width: 370px) {
+@media screen and (min-width: 370px) {
   .warp {
     width: 30%;
     margin: auto;
   }
+
 }
 
-@media all and (min-width: 820px) {
+@media screen and (min-width: 820px) {
   .warp {
     width: 50%;
     margin: auto;
   }
 }
 
-@media all and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .warp {
     width: 80%;
     margin: auto;
