@@ -8,29 +8,6 @@
   margin: 0 auto;
 }
 
-@media all and (min-width: 370px) {
-  .warp {
-    width: 30%;
-    margin: auto;
-  }
-}
-
-@media all and (min-width: 820px) {
-  .warp {
-    width: 50%;
-    margin: auto;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .warp {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-
-
 /*=================== header ======================= */
 header {
   width: 100%;
@@ -127,7 +104,6 @@ header:hover .logo {
 .depth2 ul {
   width: 180px;
   text-align: left;
-  background: #fc16c6;
 }
 
 .depth1 li {
@@ -195,7 +171,7 @@ main {
 
 .section_wrap {
   width: 100%;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -860,4 +836,26 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* ================미디어쿼리================ */
+@media all and (min-width: 370px) {
+  .warp {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 820px) {
+  .warp {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .warp {
+    width: 80%;
+    margin: auto;
+  }
 }
