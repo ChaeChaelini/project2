@@ -374,7 +374,13 @@ h3 {
 
 .thumb {
   width: 203px;
-  /* height: 250px; */
+  height: 250px;
+  background-image: url(../images/slide_img1.png);
+  background-position: center;
+   
+}
+.thumb:hover{
+  background-image: url(../images/b3_icon4.png); 
 }
 
 .item_title {
@@ -460,26 +466,55 @@ h3 {
 }
 
 .cardcontainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "card1 card2"
-    "card1 card3"
-  ;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap:10px;
+  /* display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+  gap: 20px; */
 }
 
-.card1 {
-  width: 590px;
-  height: 570px;
-  background: #c55050;
-  background-image: url(../images/c3-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .gray {
   background: #f6f6f6;
+}
+
+.card1 {
+  width: 100%;
+  height: 580px;
+  background-image: url(../images/c3-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card2_wrap {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card2-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/c3-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card2-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/c3-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*=================== content 4 ======================= */
@@ -654,27 +689,6 @@ h3 {
   align-self: stretch;
 }
 
-.cardcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-  gap: 20px;
-}
-
-.card2 {
-  width: 590px;
-  height: 275px;
-  background-image: url(../images/c3-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.card2:nth-child(2) {
-  background-image: url(../images/c3-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .card3container {
   padding: 0 80px;
@@ -697,12 +711,6 @@ h3 {
   background: #fff;
 }
 
-.card2_wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
 
 /* =================//main===================== */
 
@@ -759,6 +767,40 @@ footer {
   display: flex;
   gap: 200px;
   margin: auto;
+}
+
+.text1 {
+  font-size: 14px;
+  color: #777;
+  padding-bottom: 10px;
+}
+
+.text2 {
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.box1>p:nth-child(3) {
+  font-size: 28px;
+  color: #555;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.text3 {
+  font-size: 15px;
+  color: #555;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.text4 {
+  font-size: 12px;
+  color: #555;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 
 .box_wrap {
@@ -886,7 +928,7 @@ footer {
 }
 
 /* ================미디어쿼리================ */
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 370px) {
   .warp {
     width: 30%;
     margin: auto;
@@ -894,16 +936,26 @@ footer {
 
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (max-width: 820px) {
   .warp {
     width: 50%;
     margin: auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .warp {
     width: 80%;
     margin: auto;
   }
+  
+  .cardcontainer{
+    flex-direction: column;
+  }
+  .card1{
+    height: 280px;
+  }
 }
+
+
+
