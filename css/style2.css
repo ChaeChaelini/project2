@@ -42,7 +42,7 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex;
+
   gap: 2rem;
 }
 
@@ -142,7 +142,7 @@ header:hover #logo {
   width: 100%;
   height: auto;
   background: #ffffff;
-  margin-top: 22px;
+  margin-top: 20px;
   position: absolute;
   left: 0;
   transition: all 0.7s;
@@ -160,9 +160,12 @@ header:hover #logo {
 
 .depth2 li {
   text-align: left;
-  font-size: 15px;
   color: #666;
   padding: 10px;
+}
+
+.depth2 li a {
+  font-size: 14px;
 }
 
 .sub_menu_title {
