@@ -356,8 +356,8 @@ ul {
 
 /*=================== //banner======================= */
 
-/*=================== content 1 ======================= */
 
+/*=================== content 1 ======================= */
 .content_text p {
   color: #999;
   font-size: 1.6rem;
@@ -654,7 +654,6 @@ ul {
 }
 
 /*=================== content 6 ======================= */
-
 .middle {
   display: flex;
   flex-direction: column;
@@ -914,7 +913,6 @@ footer {
 .textbox3 p {
   display: inline;
   padding: 0 10px;
-
 }
 
 .textbox1 p:nth-child(3) {
