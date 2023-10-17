@@ -83,11 +83,6 @@ nav a#logo {
 
 nav ul a {
   color: #fff;
-
-}
-
-nav ul a:hover {
-  border-bottom: 2px solid #fff;
 }
 
 #home {
@@ -104,7 +99,7 @@ nav ul.active {
   left: 0;
 }
 
-.header_wrap>ul {
+.header_wrap > ul {
   display: flex;
   height: 80px;
 }
@@ -131,7 +126,7 @@ nav ul.active {
   align-items: center;
 }
 
-.depth1>a {
+.depth1 > a {
   width: 120px;
   display: block;
   padding: 1rem;
@@ -159,7 +154,7 @@ header:hover #logo {
   justify-content: center;
 }
 
-.depth1>.w100 {
+.depth1 > .w100 {
   overflow: hidden;
   height: 0;
 }
@@ -169,10 +164,10 @@ header:hover #logo {
   width: 100%;
   height: auto;
   background: #ffffff;
-  margin-top: 60px;
   position: absolute;
+  top: 80px;
   left: 0;
-  transition: all 0.7s;
+  transition: all 0.3s ease-in-out;
 }
 
 .depth1 a:hover {
@@ -226,7 +221,6 @@ header:hover #logo {
 
 /*=================== //header================= */
 
-
 /*=================== main================= */
 main {
   display: flex;
@@ -249,7 +243,7 @@ section {
   letter-spacing: -0.03rem;
 }
 
-section .section_wrap>[class^='content'] {
+section .section_wrap > [class^="content"] {
   padding: 5rem 0 0rem;
   margin-bottom: 4rem;
 }
@@ -304,7 +298,7 @@ section .section_wrap>[class^='content'] {
   padding-top: 150px;
 }
 
-.flex_col>button {
+.flex_col > button {
   width: 110px;
   height: 32px;
   border: 1px solid #555;
@@ -317,7 +311,7 @@ section .section_wrap>[class^='content'] {
   margin-top: 120px;
 }
 
-.flex_col>button:hover {
+.flex_col > button:hover {
   color: #fff;
   background-color: #666;
 }
@@ -371,7 +365,6 @@ ul {
 }
 
 /*=================== //banner======================= */
-
 
 /*=================== content 1 ======================= */
 .content_text p {
@@ -541,8 +534,8 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    'card1 card2'
-    'card1 card3';
+    "card1 card2"
+    "card1 card3";
   gap: 1.5rem;
 }
 
@@ -581,7 +574,7 @@ ul {
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 'item1 item2';
+  grid-template-areas: "item1 item2";
   gap: 30px;
   align-self: stretch;
   background: #fff;
@@ -701,7 +694,7 @@ ul {
   margin: 30px 0 40px 0;
 }
 
-.card3container>a {
+.card3container > a {
   background-position: center;
   background-size: cover;
   padding: 6rem 2rem;
@@ -747,7 +740,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-
 }
 
 .inner1 {
@@ -756,7 +748,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: #67625D;
+  background-color: #67625d;
 }
 
 .icon_wrap {
@@ -813,7 +805,7 @@ footer {
   width: 280px;
 }
 
-.box1>p:nth-child(3) {
+.box1 > p:nth-child(3) {
   font-size: 33px;
   color: #666;
   font-weight: 300;
@@ -1060,7 +1052,7 @@ footer {
     margin: auto;
   }
 
-  .header_wrap>ul {
+  .header_wrap > ul {
     display: flex;
     height: 80px;
     margin-top: 20px;
@@ -1082,7 +1074,7 @@ footer {
     padding: 0;
   }
 
-  .flex_col>button {
+  .flex_col > button {
     margin-top: 20px;
   }
 
