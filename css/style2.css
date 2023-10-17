@@ -28,10 +28,34 @@ header:hover {
   width: 100%;
   max-width: 1500px;
   display: flex;
+  flex-direction: row;
   height: 80px;
   align-items: center;
+  justify-content: space-between;
   margin: auto;
   text-align: center;
+}
+
+.header_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+header:hover a {
+  color: #555;
+}
+
+.depth1_wrap {
+  display: flex;
+  flex-direction: row;
 }
 
 nav {
@@ -83,7 +107,6 @@ nav ul.active {
 .header_wrap>ul {
   display: flex;
   height: 80px;
-  margin-top: 20px;
 }
 
 .h_icon ul {
@@ -99,18 +122,13 @@ nav ul.active {
   margin-top: 30px;
 }
 
-.w100 {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-}
-
 .depth1 {
   height: 100%;
   font-weight: 500;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
 }
 
 .depth1>a {
@@ -119,6 +137,7 @@ nav ul.active {
   padding: 1rem;
   color: #fff;
   font-size: 18px;
+  text-align: center;
 }
 
 #logo {
@@ -132,6 +151,14 @@ header:hover #logo {
   background-image: url(../images/logo_black.png);
 }
 
+.w100 {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
 .depth1>.w100 {
   overflow: hidden;
   height: 0;
@@ -142,7 +169,7 @@ header:hover #logo {
   width: 100%;
   height: auto;
   background: #ffffff;
-  margin-top: 20px;
+  margin-top: 60px;
   position: absolute;
   left: 0;
   transition: all 0.7s;
@@ -186,26 +213,15 @@ header:hover #logo {
 
 .h_text {
   display: flex;
-  justify-content: space-around;
-  font-size: 15px;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .h_text a {
   color: #ffffff;
-  font-weight: 500;
-}
-
-header:hover a {
-  color: #555;
-}
-
-.login {
-  width: 105px;
-}
-
-.iconbox {
-  width: 105px;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 /*=================== //header================= */
@@ -485,10 +501,10 @@ ul {
 
 .btn {
   height: 48px;
-  padding: 0 30px;
+  padding: 0 60px;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 30px;
   text-align: center;
   margin-bottom: 30px;
   cursor: pointer;
@@ -579,6 +595,7 @@ ul {
   background-size: cover;
   grid-area: item1;
   position: relative;
+  cursor: pointer;
 }
 
 .content4 .textbox h3 {
@@ -607,6 +624,7 @@ ul {
   background-position: center;
   grid-area: item2;
   position: relative;
+  cursor: pointer;
 }
 
 .card_c4_2 h3 {
@@ -770,11 +788,12 @@ footer {
 
 .inner2 {
   width: 100%;
-  max-width: 140rem;
   height: 186px;
   display: flex;
-  gap: 200px;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 230px;
+  background-color: #f1f1f1;
 }
 
 .text1 {
@@ -790,10 +809,14 @@ footer {
   padding-bottom: 10px;
 }
 
+.box1 {
+  width: 280px;
+}
+
 .box1>p:nth-child(3) {
-  font-size: 28px;
-  color: #555;
-  font-weight: 400;
+  font-size: 33px;
+  color: #666;
+  font-weight: 300;
   padding-bottom: 10px;
 }
 
@@ -814,8 +837,7 @@ footer {
 .box_wrap {
   margin: auto;
   display: flex;
-  gap: 100px;
-  padding-right: 300px;
+  gap: 80px;
 }
 
 .sns_img {
@@ -850,7 +872,7 @@ footer {
   padding-bottom: 50px;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
 }
 
 .inner3 .logo {
@@ -878,7 +900,7 @@ footer {
 
 .textbox1 p {
   display: inline;
-  padding: 0 10px;
+  padding: 0 15px;
   border-right: 1px solid #333;
 }
 
@@ -893,21 +915,24 @@ footer {
   border-radius: 3px;
   color: #9d9d9d;
   background-color: #f6f6f6;
-  padding: 5px 10px;
-  font-size: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
   text-align: center;
   margin-top: 2px;
 }
 
-.inner2_iconbox .box3 {
-  margin-top: 50px;
+.inner2_iconbox {
   display: flex;
-  align-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 230px;
 }
 
 .fl {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .textbox3 p {
@@ -1125,11 +1150,6 @@ footer {
     height: auto;
 
     flex-direction: column;
-  }
-
-  .box_wrap {
-    padding: 30px 0px 0px 0px;
-    gap: 88px;
   }
 }
 
