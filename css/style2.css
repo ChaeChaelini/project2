@@ -398,6 +398,7 @@ ul {
 /*=================== //banner======================= */
 
 /*=================== content 1 ======================= */
+
 .content_text p {
   color: #999;
   font-size: 1.6rem;
@@ -1192,6 +1193,7 @@ footer {
 @media screen and (max-width: 370px) {
   html {
     font-size: 45%;
+    width: 100%;
   }
 
   .warp {
@@ -1299,5 +1301,57 @@ footer {
     flex-wrap: nowrap;
     width: 183px;
   }
-.item_dprice
+
+  .textbox a {
+    font-size: 90%;
+  }
+
+  .textbox p {
+    font-size: 90%;
+  }
+
+  .item_dprice {
+    width: 45px;
+    padding: 0;
+  }
+
+  .btn {
+    font-size: 90%;
+    height: 28px;
+    padding: 0 30px;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+    font-weight: 500;
+  }
+
+  .content_text {
+    text-align: center;
+  }
+
+  .content_text>p {
+    font-size: 90%;
+  }
+
+  .content3 .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+    ;
+    /* gap: 0.5rem; */
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    background-size: 50%;
+  }
 }
