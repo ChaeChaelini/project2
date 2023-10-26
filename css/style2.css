@@ -9,22 +9,32 @@ html {
 
 .wrap {
   width: 100%;
+  /* height: 100vh; */
   margin: 0 auto;
+  /* position: relative; */
+  /* display: flex; */
 }
 
 .popup {
   width: 500px;
   height: 200px;
   z-index: 99999;
+  background-color: #fff;
+  opacity: 80%;
   border: 2px solid #6c801a;
   border-radius: 30px;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  /* display: none; */
+
 }
 
 .popup p:first-child {
-  padding-top: 50px;
+  padding: 50px 0;
   font-size: 18px;
   color: #555;
 }
@@ -35,6 +45,8 @@ html {
   width: 20%;
   padding: 10px;
   background: #6c801a;
+  border-radius: 30px;
+  font-size: 16px;
 }
 
 /*=================== header ======================= */
@@ -768,6 +780,12 @@ ul {
 
 /* =================footer==================== */
 footer {
+  width: 100%;
+  height: 100%;
+translateY:-100%;
+}
+
+.footer_wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -892,11 +910,12 @@ footer {
 .inner3 {
   display: flex;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   padding-bottom: 50px;
   justify-content: center;
   align-items: center;
   gap: 35px;
+  background-color: #fff;
 }
 
 .inner3 .logo {
